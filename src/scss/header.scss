@@ -1,0 +1,143 @@
+.header {
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:38px 0;
+    .header_wrapper{
+        .header_top_wrapper{
+
+            .header_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .header_logo{
+                    display: flex;
+                    justify-content: space-between;
+                    .active{
+                        margin-right: 3px;
+                    }
+                }
+                .nav_wrapper{
+                    .header_navigation{
+                        ul{
+                            display: flex;
+                            align-self: center;
+                            .navigation_list_item{
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-size: 13px;
+                                width: 135px;
+                                font-weight: 700px; 
+                                position: relative;
+                                a{
+                                    color: white;
+                                    transition: 0.2s;
+                                    padding: 0 20px 42px;
+                                }
+                                a::after{
+                                    content: "";
+                                    position: absolute;
+                                    display: block;
+                                    padding-bottom: 59px;
+                                    top:0;
+                                    left: 0;
+                                    transition: 0.2s;
+                                    width: 100%;
+                                }
+                                a:hover::after{
+                                    box-shadow:0 3 0 0#BABBC5 ;
+                                    padding-bottom: 58px;
+                                }
+
+                                a:active::after{
+                                    box-shadow:0 3 0 0 #E71414 ;
+                                }
+                                
+                                a:active{
+                                    color: #E71414;
+                                }
+                            }
+
+                        }
+                    }
+                    .burger_menu{
+                        display: none;
+                    }
+                }
+    
+    
+            }
+        }
+        .header_bottom{
+            .header_text{
+                .header_h1{
+                    font-weight: 900;
+                    text-align: center;
+                    font-size: 64px;
+                    color: white;
+                    margin-bottom: 31px;
+                }
+                .header_paragraph{
+                    color: white;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 24px;
+                    
+                }
+                margin-bottom: 79px;
+            }
+
+            .header_button{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 120px;
+                a{
+                    color:white;
+                    font-size: 24px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    line-height: 28px;
+                    background: #FF4343;
+                    padding: 20px 60px;
+                    transition: 0.5s;
+                }
+
+                a:hover{
+                    background:#E71414;
+
+                }
+                a:active{
+                    box-shadow: 4px 4px 30px 0px #FF4343;
+                }
+                
+            }
+        }
+    }
+}
+
+.header_top_wrapper::after{
+    content: '';
+    width: 100%;
+    margin: 36px auto 129px;
+    display: block;
+    border-bottom: 1px solid #BABBC5;
+    text-align: center;
+}
+
+.header_logo {
+}
+.nav_wrapper {
+}
+.header_navigation {
+}
+.burger_menu {
+}
+.header_text {
+}
+.header_h1 {
+}
+.header_paragraph {
+}
+.header_button {
+}
