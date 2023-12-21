@@ -1,0 +1,24 @@
+{
+  "name": "landing_kurs",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mniiia/LANDING2.git"
+  },
+  "author": "mniiia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mniiia/LANDING2/issues"
+  },
+  "homepage": "https://github.com/mniiia/LANDING2#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3"
+  }
+}
