@@ -1,0 +1,56 @@
+
+// $landing_red: #FF4343;
+// $landing_darkred:#E71414;
+.infocards {
+    padding: 116px 0;
+    .infocards_wrapper{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+
+         .infocard{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0 30px 88px;
+            transition: 0.2s;
+            .infocard_img{
+                margin-bottom: 29px;
+                width: 100px;
+            }
+
+            h3{
+                margin-bottom: 20px;
+                font-weight: 900;
+                font-size: 24px;
+                text-transform: uppercase;  
+            }
+
+            .infocard_paragraph{
+                text-align: center;
+                font-weight: 400;
+                font-size: 18px;
+            }
+         } 
+
+         .infocard:hover{
+            box-shadow: 0 0 10px 1px #ff4343;
+            transform: scale(1.1);
+         }
+         .infocard:active{
+            box-shadow: inset 0 0 10px 1px #e71414;
+            transform: scale(0.9);
+         }
+    }
+
+}
+
+.container {
+}
+.infocards_wrapper {
+}
+.infocard {
+}
+.infocard_img {
+}
+.infocard_paragraph {
+}
