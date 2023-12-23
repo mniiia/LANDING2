@@ -1,0 +1,33 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    .gallery_photo{
+        overflow: hidden;
+        width: 25%;
+        border: 1px solid white;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        h3{
+            margin: 110px 0 20px;
+        }
+
+        .gallery_photo_paragraph{
+            margin-bottom: 128px;
+        }
+    }
+
+    
+
+    @media (max-width:1024px) {
+        .gallery_photo{
+            width: 33%;
+        }
+        .gallery_photo:nth-child(4n){
+            display: none;
+        }
+    }
+}
+сделать image бэкграундом для красной штуки с h3 и p
