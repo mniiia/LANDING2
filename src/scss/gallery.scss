@@ -1,25 +1,77 @@
+@import '../scss/variables.scss';
 .gallery{
     display: flex;
     flex-wrap: wrap;
     .gallery_photo{
-        overflow: hidden;
+        // супер сработало
         width: 25%;
+        overflow: hidden;
         border: 1px solid white;
-        img{
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .gallery_photo_text{
+            position: relative;
+            z-index: 999;
+            text-align: center;
+            color: rgba(255, 255, 255,0);
+            h3{
+                text-transform: uppercase;
+                margin: 110px auto 20px;
+            }
+            .gallery_photo_paragraph{
+                margin-bottom: 128px;
+            }
+            transition: 0.2s;
         }
-        h3{
-            margin: 110px 0 20px;
-        }
+        position: relative;
+    }
 
-        .gallery_photo_paragraph{
-            margin-bottom: 128px;
+    .gallery_photo:hover{
+        .gallery_photo_text{
+            color: rgba(255, 255, 255,1);
         }
     }
 
-    
+    .gallery_photo::before{
+        visibility: hidden;
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+    .gallery_photo:hover::before{
+        visibility: visible;
+        background: rgba(255, 0, 0,0.2);
+    }
+
+    .picture1{
+        background-image: url("../img/gallery_image 1.jpg");
+    }
+    .picture2{
+        background-image: url("../img/gallery_image 2.jpg");
+    }
+    .picture3{
+        background-image: url("../img/gallery_image 3.jpg");
+    }
+    .picture4{
+        background-image: url("../img/gallery_image 4.jpg");
+    }
+    .picture5{
+        background-image: url("../img/gallery_image 5.jpg");
+    }
+    .picture6{
+        background-image: url("../img/gallery_image 6.jpg");
+    }
+    .picture7{
+        background-image: url("../img/gallery_image 7.jpg");
+    }
+    .picture8{
+        background-image: url("../img/gallery_image 8.jpg");
+    }
 
     @media (max-width:1024px) {
         .gallery_photo{
@@ -30,4 +82,4 @@
         }
     }
 }
-сделать image бэкграундом для красной штуки с h3 и p
+// сделать image бэкграундом для красной штуки с h3 и p
