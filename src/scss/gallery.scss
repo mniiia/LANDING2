@@ -45,7 +45,22 @@
 
     .gallery_photo:hover::before{
         visibility: visible;
-        background: rgba(255, 0, 0,0.2);
+        background: rgba(255, 67, 67,0.2);
+    }
+
+    .gallery_photo::before{
+        visibility: hidden;
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: 0.2s;
+        z-index: 1;
+    }
+
+    .gallery_photo:active::before{
+        visibility: visible;
+        background: rgba(231, 20, 20,0.5);
     }
 
     .picture1{
