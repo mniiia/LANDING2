@@ -54,30 +54,7 @@
             //     padding: 10px;
             // }
             
-            .media_list_item{
-                width: 39px;
-                height: 39px;
-                text-align: center;
-                i{
-                    padding-top: 10px;
-                    color: #C6CBCD;
-                    border: 1px solid #C6CBCD;
-                    width: 100%;
-                    height: 100%;
-                    transition: 0.2s;
-                }
-
-                i:hover{
-                    color: $landing_red;
-                    border: 1px solid $landing_red;
-                }
-
-                i:active{
-                    box-shadow:inset 0 0 5 1 $landing_darkred;
-                    color: $landing_darkred;
-                    border: 1px solid $landing_darkred;
-                }
-            } 
+            
         }
         
         
@@ -85,3 +62,28 @@
     }
     
 }
+
+.media_list_item{
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    i{
+        padding-top: 10px;
+        color: #C6CBCD;
+        border: 1px solid #C6CBCD;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s;
+    }
+
+    i:hover{
+        color: $landing_red;
+        border: 1px solid $landing_red;
+    }
+
+    i:active{
+        box-shadow:inset 0 0 5 1 $landing_darkred;
+        color: $landing_darkred;
+        border: 1px solid $landing_darkred;
+    }
+} 
