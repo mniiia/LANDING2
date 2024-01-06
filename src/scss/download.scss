@@ -59,3 +59,36 @@
         transform: scale(1);
     }
 }
+
+@media (max-width:320px) {
+    .download{
+        padding: 40px 0;
+        .download_wrapper {
+            .download_text{
+                h3{
+                    font-size: 18px;
+                }
+                h4{
+                    font-size: 13px;
+                }
+            }
+            .download_button{
+    
+                a{
+                    font-size: 18px;
+                    padding: 20px 40px;
+                }
+            
+                a:hover{
+    
+            
+                }
+                a:active{
+    
+                }
+            
+            }
+        }
+    }
+    
+}

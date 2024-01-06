@@ -88,3 +88,31 @@
         border: 1px solid $landing_darkred;
     }
 } 
+
+
+@media (max-width:320px) {
+    .profiles {
+        .profiles__wrapper {
+            flex-wrap: wrap;
+            .profile_card {
+                width: 100%;
+                margin-bottom: 20px;
+                h3{
+                    font-size: 18px;
+                }
+                h4{
+                    font-size: 14px;
+                }
+                .profile_text {
+                    .profile_paragraph{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+            
+            
+        }
+        
+    }
+}

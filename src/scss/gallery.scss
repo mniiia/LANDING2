@@ -97,4 +97,24 @@
         }
     }
 }
+@media (max-width:320px) {
+    .gallery{
+        .gallery_photo{
+            width: 50%;
+            max-height: 144px;
+            .gallery_photo_text{
+                margin-top: 40px;
+                align-self: center;
+                h3{
+                    margin: auto;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+                .gallery_photo_paragraph{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 // сделать image бэкграундом для красной штуки с h3 и p
