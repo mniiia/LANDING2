@@ -1,13 +1,13 @@
 @import '../scss/variables.scss';
 .profiles {
-    padding: 114px 170px;
+    padding: 114px 0;
     .profiles__wrapper {
         display: flex;
         justify-content: space-between;
         .profile_card {
             display: flex;
             flex-direction: column;
-            width: 270px;
+            width: 23%;
             h3{
                 margin-bottom: 5px;
                 text-transform: uppercase;
@@ -19,8 +19,9 @@
                 text-transform: uppercase;
                 margin-bottom: 18px;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 14px;
                 color: $landing_red;
+                flex-basis: 100%
             }
 
             .profile_image{
@@ -62,7 +63,7 @@
     }
     
 }
-
+///out of cards to use in footer
 .media_list_item{
     width: 39px;
     height: 39px;
