@@ -8,40 +8,64 @@
             display: flex;
             margin-bottom: 50px;
             color: #7E5D6F;
-            .swiper_image{
+            max-height: 490px;
+            // .swiper_image{
+            //     width: 50%;
+            //     background-position:center;
+            //     background-repeat: no-repeat;
+            //     background-size: cover;
+            //     background-size: 100%;
+            //     img{
+            //     }
+            // }
+            .swiper_image {
                 width: 50%;
-                background-position:center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-size: 100%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                }
             }
-    
-            .swiper_image1{
-                background-image: url("../img/turtle1.jpg");
-            }
-            .swiper_image2{
-                background-image: url("../img/turtle2.jpg");
-            }
-            .swiper_image3{
-                background-image: url("../img/turtle3.jpg");
-            }
+            // .swiper_image1{
+            //     background-image: url("../img/turtle1.jpg");
+            // }
+            // .swiper_image2{
+            //     background-image: url("../img/turtle2.jpg");
+            // }
+            // .swiper_image3{
+            //     background-image: url("../img/turtle3.jpg");
+            // }
             .swiper_text{
                 width: 50%;
                 display: flex;
                 flex-direction: column;
-                padding: 116px 0;
                 width: 471px;
                 margin: auto;
                 .swiper_paragraph{
                     font-family: 'Cardo';
                     font-size: 36px;
                     font-weight: 400;
-                    padding: 10px 0;
                 }
                 h5{
                     font-size: 13px;
                     font-weight: 700;
                     text-transform: uppercase;
+                }
+            }
+        }
+        @media (max-width:1024px){
+            .slide_content{
+                max-height: 332px;
+                .swiper_text{
+                    width: 35%;
+                    padding: 0;
+                    .swiper_paragraph{
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -75,6 +99,7 @@
             // margin-bottom: 31px;
             .slide_content{
                 flex-direction: column;
+                max-height: 538px;
                 .swiper_image{
                     height: 212px;
                     width: 100%;

@@ -49,15 +49,15 @@
                                     left: 0;
                                     transition: 0.2s;
                                     width: 100%;
-                                    padding-bottom: 56px;
+                                    padding-bottom: 54px;
                                 }
                                 a:hover::after{
-                                    box-shadow:0 3 0 0 #BABBC5;
-                                    padding-bottom: 56px;
+                                    box-shadow:0 4 0 0 #BABBC5;
+                                    padding-bottom: 54px;
                                 }
 
                                 a:active::after{
-                                    box-shadow:0 3 0 0 $landing_darkred ;
+                                    box-shadow:0 4 0 0 $landing_darkred ;
                                 }
                                 
                                 a:active{
