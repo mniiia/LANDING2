@@ -1,6 +1,12 @@
-@import url("../scss/fonts.scss");
-@import url("../scss/header.scss");
-@import url("../scss/variables.scss");
+@import "../scss/fonts.scss";
+@import "../scss/header.scss";
+@import "../scss/infocards.scss";
+@import "../scss/gallery.scss";
+@import "../scss/profiles.scss";
+@import "../scss/slider_gallery.scss";
+@import "../scss/download.scss";
+@import "../scss/footer.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -17,4 +23,5 @@ html{
    max-width: 1170px;
    padding: 0 15;
    margin: auto;
+   z-index: 999;
 }
